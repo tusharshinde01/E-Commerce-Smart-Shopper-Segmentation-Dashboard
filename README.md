@@ -19,22 +19,29 @@ Key questions addressed include:
 ### Steps followed 
 
 - Step 1 : Load data into Power BI Desktop, dataset is a csv file.
+
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
+
 - Step 4 :Data(Fact): InvoiceNo	StockCode	Description	Quantity	 InvoiceDate	UnitPrice	CustomerID	Country
+
   Customer_segmentaton_data_(Dim): CustomerID	Amount	Frequency	Recency	Cluster_Id	Cluster Recency Group
   Data Cleaning in Power Query:
  -Renamed columns for consistency.
  -Removed duplicates and errors in the data.
  -Merged sales data with customer and product tables.
  -extracted date components (Year, Quarter, Month) from transaction dates.
+
 - Step 5 :Data Modeling
 Relationships Created:
 Connected Sales Transactions to Customer Information and Customer_id using relationships:
 Customer ID → Primary Key for Customer Table.
 Custoomer_id → Primary Key for Product Table.
+
 - Step 6 :Table Schema:
 Designed a star schema with a central fact table (Data(fact)) and dimension tables (Customer_segmentaton_data_(Dim)).
+
 - Step 7 :DAX Calculations
 Custom DAX formulas were created for metrics and KPIs:
 - Total Sales = SUMX('Data(Fact)','Data(Fact)'[Quantity]*'Data(Fact)'[UnitPrice])
