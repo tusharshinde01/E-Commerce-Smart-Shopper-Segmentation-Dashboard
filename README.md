@@ -1,7 +1,7 @@
 
 # E-commerce Smart Shopper Customer Segmentation Dashboard
 
-### Dashboard Link : https://app.powerbi.com/reportEmbed?reportId=77d3f9ff-57c1-477a-a056-4804088f6c7e&autoAuth=true&ctid=c8fb140d-bdee-450d-84db-69a5b79c3f03
+### Dashboard Link : https://app.powerbi.com/reportEmbed?reportId=35a954cf-5307-4dfb-8691-e678149edbe9&autoAuth=true&ctid=b229e865-9b90-4f42-a7fb-170005d839ae
 
 ## Problem Statement
 
